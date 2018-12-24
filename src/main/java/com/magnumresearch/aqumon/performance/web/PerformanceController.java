@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
-@EnableAutoConfiguration
 @RequestMapping("/performance")
 public class PerformanceController {
 
