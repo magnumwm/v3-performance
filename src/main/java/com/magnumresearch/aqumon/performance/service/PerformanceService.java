@@ -20,6 +20,6 @@ public class PerformanceService {
     }
 
     public PortfolioPerformanceDay findLatestByPortfolioId(Long portfolioId) {
-        return performanceDayDao.findFirstByPortfolioIdOrderByReportDate(portfolioId);
+        return performanceDayDao.findFirstByPortfolioIdOrderByReportTimeDesc(portfolioId);
     }
 }

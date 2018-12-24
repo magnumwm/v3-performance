@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PortfolioPerformanceDayDao extends JpaRepository<PortfolioPerformanceDay, Long> {
 
-    PortfolioPerformanceDay findFirstByPortfolioIdOrderByReportDate(Long portfolioId);
+    PortfolioPerformanceDay findFirstByPortfolioIdOrderByReportTimeDesc(Long portfolioId);
 }
